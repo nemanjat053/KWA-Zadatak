@@ -1,0 +1,25 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Broj Indeksa</th>
+        <th scope="col">Ime</th>
+        <th scope="col">Prezime</th>
+        <th scope="col">More</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let student of students">
+      <tr>
+        <th scope="row">{{ student.id }}</th>
+        <td>{{ student.indeks}}</td>
+        <td>{{ student.ime}}</td>
+        <td>{{ student.prezime}}</td>
+        <td>
+            <button class="btn btn-primary" (click)="detailStudent(student.id)">Details</button>
+            <button class="btn btn-danger" (click)="deleteStudent(student.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+    <a [routerLink]="['/registration']" routerLinkActive="router-link-active" >Register new student</a>
+  </table>
+  <app-tabela-studenata-detail [chosenStudent]="chosenStudent"></app-tabela-studenata-detail>

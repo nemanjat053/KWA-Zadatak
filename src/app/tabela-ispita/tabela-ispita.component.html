@@ -1,0 +1,41 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Redni broj</th>
+      <th scope="col">Sifra predmeta</th>
+      <th scope="col">Naziv predmeta</th>
+      <th scope="col">Datum ispita</th>
+      <th scope="col">More</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let exam of exams">
+    <tr>
+      <th scope="row">{{ exam.id }}</th>
+      <td>{{ exam.sifraPredmeta }}</td>
+      <td>{{ exam.nazivPredmeta }}</td>
+      <td>{{ exam.datumIspita }}</td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteExam(exam.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h2>Add new exam</h2>
+<form [formGroup]="examForm" (ngSubmit)="addNew()">
+  <div class="form-group">
+    <label>Naziv predmeta : </label>
+    <input type="text" class="form-control" formControlName="nazivPredmeta" />
+  </div>
+
+  <div class="form-group">
+    <label>Sifra predmeta : </label>
+    <input type="text" class="form-control" formControlName="sifraPredmeta" />
+  </div>
+
+  <div class="form-group">
+    <label>Datum ispita : </label>
+    <input type="text" class="form-control" formControlName="datumIspita" />
+  </div>
+  <button class="btn btn-primary">Register new exam</button>
+</form>

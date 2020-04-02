@@ -1,0 +1,51 @@
+{
+  "students": [
+    {
+      "id": 0,
+      "indeks": "273121/2017",
+      "ime": "Nikola",
+      "prezime": "Bodljokozac"
+    },
+    {
+      "id": 1,
+      "indeks": "321311/2017",
+      "ime": "Dragan",
+      "prezime": "Krkoljac"
+    },
+    {
+      "id": 2,
+      "indeks": "231231/2017",
+      "ime": "Osman",
+      "prezime": "Mrmoljac"
+    }
+  ],
+  "ispiti": [
+    {
+      "id": 0,
+      "redniBroj": "1",
+      "sifraPredmeta": "321",
+      "nazivPredmeta": "OOP2",
+      "datumIspita": ""
+    },
+    {
+      "id": 1,
+      "redniBroj": "2",
+      "sifraPredmeta": "333",
+      "nazivPredmeta": "Testiranje",
+      "datumIspita": ""
+    },
+    {
+      "id": 2,
+      "redniBroj": "3",
+      "sifraPredmeta": "312",
+      "nazivPredmeta": "Modelovanje",
+      "datumIspita": ""
+    }
+  ],
+  "prijavljeniIspiti": [
+    {
+      "ime": "Nikola",
+      "nazivPredmeta": "Modelovanje"
+    }
+  ]
+}

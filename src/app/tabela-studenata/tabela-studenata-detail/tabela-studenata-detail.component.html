@@ -1,0 +1,25 @@
+<div *ngIf="chosenStudent">
+  <hr />
+  <h3>Detail of student</h3>
+  <div class="form-group">
+    <label>Broj Indeksa</label>
+    <input
+      type="text"
+      class="form-control"
+      value="{{ chosenStudent.indeks }}"
+    />
+  </div>
+  <div class="form-group">
+    <label>Ime</label>
+    <input type="text" class="form-control" value="{{ chosenStudent.ime }}" />
+  </div>
+  <div class="form-group">
+    <label>Prezime</label>
+    <input
+      type="text"
+      class="form-control"
+      value="{{ chosenStudent.prezime }}"
+    />
+  </div>
+  <button class="btn btn-primary" type="submit">Save changes</button>
+</div>
