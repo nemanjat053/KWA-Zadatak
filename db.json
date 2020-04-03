@@ -1,10 +1,10 @@
 {
   "students": [
     {
-      "id": 0,
       "indeks": "273121/2017",
       "ime": "Nikola",
-      "prezime": "Bodljokozac"
+      "prezime": "Bodljokozac",
+      "id": 0
     },
     {
       "id": 1,

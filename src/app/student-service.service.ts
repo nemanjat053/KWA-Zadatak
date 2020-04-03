@@ -37,8 +37,8 @@ export class StudentServiceService {
   }
 
   // * Change student
-  change(newStudentData){
-    return this._http.put((this._url + 'students'), newStudentData)
+  changeStudent(newStudentData, id){
+    return this._http.put((this._url + 'students/' + id), newStudentData)
   }
 
   // * --------------- ISPITI --------------- * //

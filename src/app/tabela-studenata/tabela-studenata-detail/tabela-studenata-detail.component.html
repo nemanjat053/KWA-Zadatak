@@ -11,15 +11,21 @@
   </div>
   <div class="form-group">
     <label>Ime</label>
-    <input type="text" class="form-control" value="{{ chosenStudent.ime }}" />
+    <input
+      type="text"
+      [(ngModel)]="novoIme"
+      class="form-control"
+      value="{{ chosenStudent.ime }}"
+    />
   </div>
   <div class="form-group">
     <label>Prezime</label>
     <input
       type="text"
+      [(ngModel)]="novoPrezime"
       class="form-control"
       value="{{ chosenStudent.prezime }}"
     />
   </div>
-  <button class="btn btn-primary" type="submit">Save changes</button>
+  <button class="btn btn-primary" type="submit" (click)="change()">Save changes</button>
 </div>
