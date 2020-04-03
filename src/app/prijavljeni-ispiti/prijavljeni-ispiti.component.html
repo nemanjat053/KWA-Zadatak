@@ -2,13 +2,22 @@
     <thead>
       <tr>
         <th scope="col">Ime Studenta</th>
+        <th scope="col">Prezime Studenta</th>
+        <th scope="col">Indeks Studenta</th>
         <th scope="col">Naziv Predmeta</th>
+        <th scope="col">Sifra Predmeta</th>
+        <th scope="col">Datum Ispita</th>
       </tr>
     </thead>
     <tbody *ngFor="let p of prijavljeniIspiti">
       <tr>
         <th scope="row">{{ p.ime }}</th>
+        <td>{{ p.prezime }}</td>
+        <td>{{ p.indeks }}</td>
         <td>{{ p.nazivPredmeta }}</td>
+        <td>{{ p.sifraPredmeta }}</td>
+        <td>{{ p.datumIspita }}</td>
       </tr>
+      
     </tbody>
   </table>

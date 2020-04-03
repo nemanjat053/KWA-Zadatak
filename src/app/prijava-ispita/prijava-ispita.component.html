@@ -1,18 +1,18 @@
 <hr />
 <h3>Prijava ispita</h3>
-<form [formGroup]="prijaviIspitForm" (submit)="prijavaIspita()">
+<form (submit)="prijavaIspita()">
   <div class="container">
     <div class="form-group">
-      <select>
+      <select (change)="selectChangeHandler($event)">
         <option
           *ngFor="let exam of exams"
           >{{ exam.nazivPredmeta }}</option
         >
       </select>
-      <select>
+      <select (change)="selectChangeHandler1($event)">
         <option *ngFor="let student of students">{{ student.ime }}</option>
       </select>
-      <button class="btn btn-primary" >Prijavi ispit</button>
+      <button class="btn btn-primary" type="submit">Prijavi ispit</button>
     </div>
   </div>
 </form>

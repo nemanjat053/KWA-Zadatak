@@ -66,6 +66,10 @@ export class StudentServiceService {
     return this._http.get(this._url + 'prijavljeniIspiti')
   }
 
+  prijaviIspit(ispit){
+    return this._http.post((this._url + 'prijavljeniIspiti'), ispit)
+  }
+
   // ! Handling errros
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {

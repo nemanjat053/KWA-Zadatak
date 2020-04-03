@@ -18,7 +18,6 @@ export class PrijavljeniIspitiComponent implements OnInit {
       response => this.prijavljeniIspiti = response,
       error => console.log("Error" + error)
     )
-
   }
 
 }

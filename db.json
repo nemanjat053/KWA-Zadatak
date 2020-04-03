@@ -44,8 +44,23 @@
   ],
   "prijavljeniIspiti": [
     {
+      "id": 0,
       "ime": "Nikola",
+      "prezime": "Bodljokozac",
+      "indeks": "273121/2017",
+      "nazivPredmeta": "Modelovanje",
+      "sifraPredmeta": "312",
+      "datumIspita": ""
+    },
+    {
+      "id": 1,
+      "ime": "Osman",
       "nazivPredmeta": "Modelovanje"
+    },
+    {
+      "id": 2,
+      "ime": "Dragan",
+      "nazivPredmeta": "Testiranje"
     }
   ]
 }
